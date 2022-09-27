@@ -1,8 +1,9 @@
 import "./App.css";
-import { MuiSelect } from "./components/muiSelect";
+// import { MuiSelect } from "./components/muiSelect";
 // import { MuiTextField } from "./components/muiTextField";
 // import { MuiButton } from "./components/muiButton";
 // import { MuiTypography } from "./components/muiTypography";
+import { MuiRadio } from "./components/MuiRadio";
 
 function App() {
   return (
@@ -10,8 +11,8 @@ function App() {
       {/* <MuiTextField /> */}
       {/* <MuiTypography /> */}
       {/* <MuiButton /> */}
-
-      <MuiSelect />
+      <MuiRadio />
+      {/* <MuiSelect /> */}
     </div>
   );
 }
