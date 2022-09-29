@@ -4,7 +4,9 @@ import { FavoriteBorder } from "@mui/icons-material";
 import { Favorite } from "@mui/icons-material";
 
 export const MuiRating = () => {
-  const [value, setValue] = React.useState<number | null>(3);
+  const [value, setValue] = React.useState<number | null>(null);
+
+  // const [value, setValue] = React.useState<number | null>(3);
 
   console.log({ value });
 
@@ -25,7 +27,7 @@ export const MuiRating = () => {
         icon={<Favorite fontSize="inherit" color="error" />}
         emptyIcon={<FavoriteBorder fontSize="inherit" />}
         // readOnly
-        highlightSelectedOnly
+        // highlightSelectedOnly
       />
     </Stack>
   );
