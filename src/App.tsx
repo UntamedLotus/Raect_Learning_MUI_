@@ -11,7 +11,8 @@ import "./App.css";
 // import { MuiLayout } from "./components/MuiLayout";
 // import { MuiCard } from "./components/MuiCard";
 // import { MuiAccordian } from "./components/MuiAccordian";
-import { MuiImagelist } from "./components/MuiImagelist";
+// import { MuiImagelist } from "./components/MuiImagelist";
+import { MuiNavbar } from "./components/MuiNavbar";
 
 function App() {
   return (
@@ -28,7 +29,8 @@ function App() {
       {/* <MuiLayout /> */}
       {/* <MuiCard /> */}
       {/* <MuiAccordian /> */}
-      <MuiImagelist />
+      {/* <MuiImagelist /> */}
+      <MuiNavbar />
     </div>
   );
 }
