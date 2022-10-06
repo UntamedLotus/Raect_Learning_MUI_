@@ -3,13 +3,13 @@ import { Box, TextField } from "@mui/material";
 import { DateRangePicker, DateRange } from "@mui/lab";
 
 export const MuiRange = () => {
-  const [value, setValue] = React.useState<DateRange<Date>>([null, null]);
-  console.log({ value });
+  // const [value, setValue] = React.useState<DateRange<Date>>([null, null]);
+  // console.log({ value });
 
   return (
     <div>
       <Box width="500px">
-        <DateRangePicker
+        {/* <DateRangePicker
           startText="check-ins"
           endText="check-out"
           value={value}
@@ -23,7 +23,8 @@ export const MuiRange = () => {
               <TextField {...endProps} />
             </>
           )}
-        />
+        /> */}
+        Ruttika
       </Box>
     </div>
   );
