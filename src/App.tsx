@@ -1,6 +1,8 @@
 import "./App.css";
 import { LocalizationProvider } from "@mui/x-date-pickers";
 import { AdapterDateFns } from "@mui/x-date-pickers/AdapterDateFns";
+import { createTheme, colors, ThemeProvider } from "@mui/material";
+
 // import { MuiSelect } from "./components/muiSelect";
 // import { MuiTextField } from "./components/muiTextField";
 // import { MuiButton } from "./components/muiButton";
@@ -39,50 +41,71 @@ import { AdapterDateFns } from "@mui/x-date-pickers/AdapterDateFns";
 // import { MuiMasonry } from "./components/MuiMasonry";
 import { MuiResponsiveness } from "./components/MuiResponsiveness";
 
+const theme = createTheme({
+  status: {
+    danger: "#e53e3e",
+  },
+  palette: {
+    secondary: {
+      main: colors.orange[500],
+    },
+    neutral: {
+      main: colors.grey[500],
+      darker: colors.grey[700],
+    },
+  },
+});
+
 function App() {
   return (
-    <LocalizationProvider dateAdapter={AdapterDateFns}>
-      <div className="App">
-        {/* <MuiTextField /> */}
-        {/* <MuiTypography /> */}
-        {/* <MuiButton /> */}
-        {/* <MuiRadio /> */}
-        {/* <MuiSelect /> */}
-        {/* <MuiCheckbox /> */}
-        {/* <MuiSwitch /> */}
-        {/* <MuiRating /> */}
-        {/* <MuiAutocomplete /> */}
-        {/* <MuiLayout /> */}
-        {/* <MuiCard /> */}
-        {/* <MuiAccordian /> */}
-        {/* <MuiImagelist /> */}
-        {/* <MuiNavbar /> */}
-        {/* <MuiLink /> */}
-        {/* <MuiBreadcrum /> */}
-        {/* <MuiDrawer /> */}
-        {/* <MuiSpeedDial /> */}
-        {/* <MuiBottomNav /> */}
-        {/* <MuiAvatar /> */}
+    <ThemeProvider theme={theme}>
+      <LocalizationProvider dateAdapter={AdapterDateFns}>
+        <div className="App">
+          {/* Basic */}
+          {/* <MuiTextField /> */}
+          {/* <MuiTypography /> */}
+          {/* <MuiButton /> */}
+          {/* <MuiRadio /> */}
+          {/* <MuiSelect /> */}
+          {/* <MuiCheckbox /> */}
+          {/* <MuiSwitch /> */}
+          {/* <MuiRating /> */}
+          {/* <MuiAutocomplete /> */}
+          {/* <MuiLayout /> */}
+          {/* <MuiCard /> */}
+          {/* <MuiAccordian /> */}
+          {/* <MuiImagelist /> */}
+          {/* <MuiNavbar /> */}
+          {/* <MuiLink /> */}
+          {/* <MuiBreadcrum /> */}
+          {/* <MuiDrawer /> */}
+          {/* <MuiSpeedDial /> */}
+          {/* <MuiBottomNav /> */}
+          {/* <MuiAvatar /> */}
+          {/* <MuiBadge /> */}
+          {/* <MuiList /> */}
+          {/* <MuiChip /> */}
+          {/* <MuiTooltip /> */}
+          {/* <MuiTable /> */}
+          {/* <MuiAlert /> */}
+          {/* <MuiSnackbar /> */}
+          {/* <MuiDialog /> */}
+          {/* <MuiProgress /> */}
+          {/* <MuiSkeleton /> */}
+          {/* <MuiLoadingBtn /> */}
+          {/* <MuiPicker /> */}
 
-        {/* <MuiBadge /> */}
-        {/* <MuiList /> */}
-        {/* <MuiChip /> */}
-        {/* <MuiTooltip /> */}
-        {/* <MuiTable /> */}
-        {/* <MuiAlert /> */}
-        {/* <MuiSnackbar /> */}
-        {/* <MuiDialog /> */}
-        {/* <MuiProgress /> */}
-        {/* <MuiSkeleton /> */}
-        {/* <MuiLoadingBtn /> */}
-        {/* <MuiPicker /> */}
-        {/* <MuiRange /> */}
-        {/* <MuiTabs /> */}
-        {/* <MuiTimeline /> */}
-        {/* <MuiMasonry /> */}
-        <MuiResponsiveness />
-      </div>
-    </LocalizationProvider>
+          {/* @mui/Lab Components */}
+          {/* <MuiRange /> */}
+          {/* <MuiTabs /> */}
+          {/* <MuiTimeline /> */}
+          {/* <MuiMasonry /> */}
+
+          {/* Other */}
+          <MuiResponsiveness />
+        </div>
+      </LocalizationProvider>
+    </ThemeProvider>
   );
 }
 
